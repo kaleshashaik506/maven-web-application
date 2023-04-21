@@ -1,5 +1,6 @@
 node{
 def mavenHome = tool name: "maven3.8.8"
+echo "the node name is :" ${env.NODE_NAME}
  stage('CheckoutCode'){
 git branch: 'development', credentialsId: '4e5fb496-9501-431d-a749-bc96028f9606', url: 'https://github.com/kaleshashaik506/maven-web-application.git'
 }
